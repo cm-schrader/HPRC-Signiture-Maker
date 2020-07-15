@@ -20,7 +20,7 @@ def admin():
         return False
 
 
-def get_signature_path():
+def get_signature_path() -> pathlib.Path:
     """
     Returns the HPRC signiture path.
     """
@@ -36,7 +36,7 @@ def get_signature_path():
         exit()
 
     try:
-        signPath = signPath / "Microsoft/Signatures/HPRC.htm"
+        signPath / "Microsoft/Signatures/HPRC.htm"
     except FileNotFoundError:
         print("Could not find your Microsoft Signatures Directory.")
         exit()
@@ -63,5 +63,3 @@ if __name__ == "__main__":
 
     with open(sigPath, "w") as sig:
         sig.write(html)
-    input(
-        "Operation Complete. You may now reopen Outlook.\nPress [ENTER] to close.")

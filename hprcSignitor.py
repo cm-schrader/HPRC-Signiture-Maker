@@ -1,11 +1,3 @@
-"""
-A short script that automates
-
-Theoretically supports Windows, Mac, and Linux, but has only been tested on
-Windows.
-by: Christian M. Schrader
-"""
-
 import re
 import os
 import sys
@@ -17,7 +9,7 @@ from elevate import elevate
 
 def get_signature_path():
     """
-    Returns the HPRC signiture path.
+    Returns the signature directory.
     """
     signPath = pathlib.Path.home()
     if sys.platform == "win32":
@@ -41,6 +33,7 @@ def get_signature_path():
 
 if __name__ == "__main__":
     elevate()
+    print("=====================================\n\tHPRC Signiture Maker\n=====================================\n")
     print("Please close Outlook before proceeding.")
 
     name = input("Full Name     :")

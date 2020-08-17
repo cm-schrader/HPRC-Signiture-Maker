@@ -8,6 +8,9 @@ Verified to run on Windows.  Theoretically runs on Mac and Linux although it has
 ## Use
 1. If not installed allready, install Python 3.8 or greater and Pip.  You must have Python and Pip added to Path.  This is an option in the installer, but if you missed it you can add it manually.  _The package elevate is required.  Typically this must be done manually but for the convenience of nonprogrammer officers, the script will automatically install it if is not installed._
 
+1. Click on the green "Code" button at the top of this page.  If you have GIT hub, you can clone the repository, otherwise, just click "download ZIP"
+   1. If you downloaded the zip, be sure to extract the folder from it.  You will find the program inside of the folder.
+
 1. Run ```hprcSignitor.py```
 
 1. Complete all the fields.

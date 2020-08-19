@@ -1,5 +1,6 @@
+_Note, this branch includes the AIAA officer template.  If you are an HPRC officer, you need to go back to the master branch._
 # HPRC Signiture Maker
-A simple Python program that generates and installs an Outlook signiture based off a template.  It was written to simplify creating signitures for the Officers of AIAA's HPRC.  The script uses regexes to fill the fields "HNAME", "HPOSITION", "HMAJOR", and "HCLASS" in a template as well as include any assets (such as images) in the assets folder.  The resulting HTML signature is created in the Microsoft Signature folder where it can be immedietly used in any new email.
+A simple Python program that generates and installs an Outlook signiture based off a template.  It was written to simplify creating signitures for the Officers of AIAA's HPRC although this branch of the project uses a template made for AIAA officers.  The script uses regexes to fill the fields "HNAME", "HPOSITION", "HMAJOR", and "HCLASS" in a template as well as include any assets (such as images) in the assets folder.  The resulting HTML signature is created in the Microsoft Signature folder where it can be immedietly used in any new email.
 
 __Note: This only works for Outlook for Desktop.  For other platforms, generate a signature for Outlook for desktop and follow a tutorial such as [this one](https://blog.gimm.io/add-email-signature-outlook-app-ios/).__
 
@@ -15,7 +16,7 @@ Verified to run on Windows.  Theoretically runs on Mac and Linux although it has
 
 1. Complete all the fields.
    1. Full Name: Your perfered full name.  ei: "Christian M. Schrader"
-   1. Officer Position: Your official title on the Officer Board of HPRC.  ei: "Documentation Officer"
+   1. Officer Position: Your official title on the Officer Board of AIAA.  ei: "Public Relations"
    1. Major: The title of your major.  ei: "Aerospace Engineering"
    1. Graduation Year: The year you expect to graduate with your BS.  ei: "2021"
 

@@ -52,7 +52,7 @@ def create_signature(name, title, major, year):
         assetPath = pathlib.Path.cwd() / "assets"
         for fileName in os.listdir(assetPath):
             copyfile(assetPath / fileName, sigPath / fileName)
-        sigPath = sigPath / "HPRC.htm"
+        sigPath = sigPath / "AIAA.htm"
         copyfile("template.html", sigPath)
         with open(sigPath, "r") as sig:
             html = sig.read()

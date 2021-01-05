@@ -1,4 +1,3 @@
-_Note, this branch includes the AIAA officer template.  If you are an HPRC officer, you need to go back to the master branch._
 # HPRC Signiture Maker
 A simple Python program that generates and installs an Outlook signiture based off a template.  It was written to simplify creating signitures for the Officers of AIAA's HPRC although this branch of the project uses a template made for AIAA officers.  The script uses regexes to fill the fields "HNAME", "HPOSITION", "HMAJOR", and "HCLASS" in a template as well as include any assets (such as images) in the assets folder.  The resulting HTML signature is created in the Microsoft Signature folder where it can be immedietly used in any new email.
 

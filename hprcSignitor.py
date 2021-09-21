@@ -49,14 +49,14 @@ def create_signature(name, title, major, year):
         return
     try:
         sigPath = get_signature_path()
-        assetPath = pathlib.Path.cwd() / "assets"
-        for fileName in os.listdir(assetPath):
-            copyfile(assetPath / fileName, sigPath / fileName)
+        # assetPath = pathlib.Path.cwd() / "assets"
+        # for fileName in os.listdir(assetPath):
+        #     copyfile(assetPath / fileName, sigPath / fileName)
         sigPath = sigPath / "HPRC.htm"
         copyfile("template.html", sigPath)
         with open(sigPath, "r") as sig:
             html = sig.read()
-            html = re.sub(r"assets/", "", html)
+            # html = re.sub(r"assets/", "", html)
             html = re.sub(r"HNAME", name, html)
             html = re.sub(r"HPOSITION", title, html)
             html = re.sub(r"HMAJOR", major, html)
@@ -68,7 +68,7 @@ def create_signature(name, title, major, year):
         messagebox.showerror(
             "Runtime Error", f"An unhandled exception has caused a program failure.\nERROR:{e}")
     messagebox.showinfo("Signature Created",
-                        "Your signature has been successfully created.  The program will now close.")
+                        "Your signature has been successfully created and can now be used in new emails.  The program will now close.")
     exit()
 
 
